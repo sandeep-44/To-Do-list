@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+  <div id="3d-container"></div>
+  <div class="moving-bg"></div>
+  <div class="todo-container">
+    <h1>To-<span style="color: rgb(27, 28, 29);">Do</span> <span style="color: #bd1a25;">List</span></h1>
+    <div class="input-container">
+      <input type="text" id="todo-input" placeholder="What needs to be done?">
+      <button id="add-task">Add Task</button>
+    </div>
+    <div class="filter-buttons">
+    
+      <button id="filter-active" class="filter-button">Active</button>
+      <button id="filter-completed" class="filter-button">Completed</button>
+    </div>
+    <ul id="todo-list"></ul>
+    <div class="footer">
+      <span id="items-left">0 left</span>
+      <button id="clear-completed">Clear</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
